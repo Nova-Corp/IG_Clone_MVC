@@ -3,17 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		69C15205907A905A844A0B94 /* Pods_IG_Clone_MVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 026A8F7E2DCAF83098C24626 /* Pods_IG_Clone_MVC.framework */; };
 		84A8080725BBBF70008FB878 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8080625BBBF70008FB878 /* AppDelegate.swift */; };
 		84A8080925BBBF70008FB878 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8080825BBBF70008FB878 /* SceneDelegate.swift */; };
-		84A8080B25BBBF70008FB878 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8080A25BBBF70008FB878 /* ViewController.swift */; };
-		84A8080E25BBBF70008FB878 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A8080C25BBBF70008FB878 /* Main.storyboard */; };
+		84A8080B25BBBF70008FB878 /* FeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8080A25BBBF70008FB878 /* FeedsViewController.swift */; };
 		84A8081025BBBF72008FB878 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84A8080F25BBBF72008FB878 /* Assets.xcassets */; };
 		84A8081325BBBF72008FB878 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A8081125BBBF72008FB878 /* LaunchScreen.storyboard */; };
+		84A8081E25BBC53C008FB878 /* FeedsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8081D25BBC53C008FB878 /* FeedsView.swift */; };
+		84A8082225BBEB51008FB878 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8082125BBEB51008FB878 /* Icons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,11 +24,12 @@
 		84A8080325BBBF70008FB878 /* IG_Clone_MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IG_Clone_MVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A8080625BBBF70008FB878 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84A8080825BBBF70008FB878 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84A8080A25BBBF70008FB878 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		84A8080D25BBBF70008FB878 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84A8080A25BBBF70008FB878 /* FeedsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsViewController.swift; sourceTree = "<group>"; };
 		84A8080F25BBBF72008FB878 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84A8081225BBBF72008FB878 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84A8081425BBBF72008FB878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84A8081D25BBC53C008FB878 /* FeedsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsView.swift; sourceTree = "<group>"; };
+		84A8082125BBEB51008FB878 /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +58,6 @@
 				0C6C32377747BB4FF446E6A8 /* Pods-IG_Clone_MVC.debug.xcconfig */,
 				19F32392828BC749B7619242 /* Pods-IG_Clone_MVC.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +82,56 @@
 		84A8080525BBBF70008FB878 /* IG_Clone_MVC */ = {
 			isa = PBXGroup;
 			children = (
-				84A8080625BBBF70008FB878 /* AppDelegate.swift */,
-				84A8080825BBBF70008FB878 /* SceneDelegate.swift */,
-				84A8080A25BBBF70008FB878 /* ViewController.swift */,
-				84A8080C25BBBF70008FB878 /* Main.storyboard */,
+				84A8082025BBEB2B008FB878 /* Support-Lib */,
+				84A8081C25BBC419008FB878 /* Controller */,
+				84A8081B25BBC40B008FB878 /* View */,
+				84A8081A25BBC400008FB878 /* Model */,
+				84A8081F25BBE7A2008FB878 /* Delegates */,
 				84A8080F25BBBF72008FB878 /* Assets.xcassets */,
 				84A8081125BBBF72008FB878 /* LaunchScreen.storyboard */,
 				84A8081425BBBF72008FB878 /* Info.plist */,
 			);
 			path = IG_Clone_MVC;
+			sourceTree = "<group>";
+		};
+		84A8081A25BBC400008FB878 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		84A8081B25BBC40B008FB878 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84A8081D25BBC53C008FB878 /* FeedsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		84A8081C25BBC419008FB878 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84A8080A25BBBF70008FB878 /* FeedsViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84A8081F25BBE7A2008FB878 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				84A8080625BBBF70008FB878 /* AppDelegate.swift */,
+				84A8080825BBBF70008FB878 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		84A8082025BBEB2B008FB878 /* Support-Lib */ = {
+			isa = PBXGroup;
+			children = (
+				84A8082125BBEB51008FB878 /* Icons.swift */,
+			);
+			path = "Support-Lib";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +196,6 @@
 			files = (
 				84A8081325BBBF72008FB878 /* LaunchScreen.storyboard in Resources */,
 				84A8081025BBBF72008FB878 /* Assets.xcassets in Resources */,
-				84A8080E25BBBF70008FB878 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,8 +248,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84A8080B25BBBF70008FB878 /* ViewController.swift in Sources */,
+				84A8081E25BBC53C008FB878 /* FeedsView.swift in Sources */,
+				84A8080B25BBBF70008FB878 /* FeedsViewController.swift in Sources */,
 				84A8080725BBBF70008FB878 /* AppDelegate.swift in Sources */,
+				84A8082225BBEB51008FB878 /* Icons.swift in Sources */,
 				84A8080925BBBF70008FB878 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,14 +259,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		84A8080C25BBBF70008FB878 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84A8080D25BBBF70008FB878 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		84A8081125BBBF72008FB878 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -361,7 +396,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sr.IG-Clone-MVC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sr.ig-mvc-clone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -380,7 +415,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.sr.IG-Clone-MVC";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sr.ig-mvc-clone";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
