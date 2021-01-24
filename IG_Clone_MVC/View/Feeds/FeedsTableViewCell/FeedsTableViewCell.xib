@@ -100,6 +100,16 @@
                     <constraint firstItem="3cz-1Z-NK2" firstAttribute="bottom" secondItem="rc4-aY-dgs" secondAttribute="bottom" id="teD-Xj-uSS"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="commentBtn" destination="rc4-aY-dgs" id="0iS-6q-Ui4"/>
+                <outlet property="makeBookMark" destination="ZBd-18-XUb" id="5ss-Mt-hgX"/>
+                <outlet property="makeFav" destination="BaK-FG-7DX" id="y2J-k9-pcj"/>
+                <outlet property="moreBtn" destination="hUq-oA-Xeo" id="eSC-QB-KLP"/>
+                <outlet property="postImg" destination="p4I-aR-MU1" id="Zdl-Tr-WgM"/>
+                <outlet property="profileName" destination="8Bn-XC-qMC" id="ek4-wF-d8I"/>
+                <outlet property="profilePic" destination="ttx-Qd-9yG" id="Exh-Ro-JXW"/>
+                <outlet property="sendDirectMsg" destination="3cz-1Z-NK2" id="lQv-x9-abZ"/>
+            </connections>
             <point key="canvasLocation" x="-163.768115942029" y="51.897321428571423"/>
         </tableViewCell>
     </objects>

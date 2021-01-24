@@ -17,8 +17,10 @@ class FeedsViewController: UITableViewController {
         feedsView.setupNavigationBar(vc: self)
         navBarFunctionality()
         
-        let nib = UINib.init(nibName: "FeedsTableViewCell", bundle: nil)
-        tableView.register(nib, forCellReuseIdentifier: "FeedsTableViewCell")
+        let feedsTableCellNib = UINib.init(nibName: "FeedsTableViewCell", bundle: nil)
+        let storyTableCellNib = UINib.init(nibName: "StoryTableViewCell", bundle: nil)
+        tableView.register(feedsTableCellNib, forCellReuseIdentifier: "FeedsTableViewCell")
+        tableView.register(storyTableCellNib, forCellReuseIdentifier: "StoryTableViewCell")
         tableView.separatorStyle = .none
         
     }
@@ -43,12 +45,14 @@ extension FeedsViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        if indexPath.row == 1 {
+        if indexPath.row == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "FeedsTableViewCell") as! FeedsTableViewCell
             return cell
-//        }else{
-//
-//        }
+        }else{
+            
+            let cell = tableView.dequeueReusableCell(withIdentifier: "StoryTableViewCell") as! StoryTableViewCell
+            return cell
+        }
         
     }
 }

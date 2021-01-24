@@ -17,6 +17,10 @@
 		84A8081325BBBF72008FB878 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84A8081125BBBF72008FB878 /* LaunchScreen.storyboard */; };
 		84A8081E25BBC53C008FB878 /* FeedsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8081D25BBC53C008FB878 /* FeedsView.swift */; };
 		84A8082225BBEB51008FB878 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8082125BBEB51008FB878 /* Icons.swift */; };
+		84AE161E25BD40CA003DE7E3 /* StoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AE161C25BD40CA003DE7E3 /* StoryTableViewCell.swift */; };
+		84AE161F25BD40CA003DE7E3 /* StoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AE161D25BD40CA003DE7E3 /* StoryTableViewCell.xib */; };
+		84AE162325BD46CC003DE7E3 /* StoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AE162125BD46CC003DE7E3 /* StoryCollectionViewCell.swift */; };
+		84AE162425BD46CC003DE7E3 /* StoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84AE162225BD46CC003DE7E3 /* StoryCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +38,10 @@
 		84A8081425BBBF72008FB878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84A8081D25BBC53C008FB878 /* FeedsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsView.swift; sourceTree = "<group>"; };
 		84A8082125BBEB51008FB878 /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
+		84AE161C25BD40CA003DE7E3 /* StoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryTableViewCell.swift; sourceTree = "<group>"; };
+		84AE161D25BD40CA003DE7E3 /* StoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryTableViewCell.xib; sourceTree = "<group>"; };
+		84AE162125BD46CC003DE7E3 /* StoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCollectionViewCell.swift; sourceTree = "<group>"; };
+		84AE162225BD46CC003DE7E3 /* StoryCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StoryCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +86,8 @@
 			children = (
 				84A8081D25BBC53C008FB878 /* FeedsView.swift */,
 				84170E3F25BC607C0069BB01 /* FeedsTableViewCell */,
+				84AE162025BD40D1003DE7E3 /* StoryTableViewCell */,
+				84AE162525BD46D9003DE7E3 /* StoryCell */,
 			);
 			path = Feeds;
 			sourceTree = "<group>";
@@ -164,6 +174,24 @@
 			path = "Support-Lib";
 			sourceTree = "<group>";
 		};
+		84AE162025BD40D1003DE7E3 /* StoryTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				84AE161C25BD40CA003DE7E3 /* StoryTableViewCell.swift */,
+				84AE161D25BD40CA003DE7E3 /* StoryTableViewCell.xib */,
+			);
+			path = StoryTableViewCell;
+			sourceTree = "<group>";
+		};
+		84AE162525BD46D9003DE7E3 /* StoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				84AE162125BD46CC003DE7E3 /* StoryCollectionViewCell.swift */,
+				84AE162225BD46CC003DE7E3 /* StoryCollectionViewCell.xib */,
+			);
+			path = StoryCell;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -225,8 +253,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				84A8081325BBBF72008FB878 /* LaunchScreen.storyboard in Resources */,
+				84AE162425BD46CC003DE7E3 /* StoryCollectionViewCell.xib in Resources */,
 				84A8081025BBBF72008FB878 /* Assets.xcassets in Resources */,
 				84170E4125BC61D80069BB01 /* FeedsTableViewCell.xib in Resources */,
+				84AE161F25BD40CA003DE7E3 /* StoryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,12 +309,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84AE162325BD46CC003DE7E3 /* StoryCollectionViewCell.swift in Sources */,
 				84A8081E25BBC53C008FB878 /* FeedsView.swift in Sources */,
 				84170E3D25BC2AFF0069BB01 /* FeedsTableViewCell.swift in Sources */,
 				84A8080B25BBBF70008FB878 /* FeedsViewController.swift in Sources */,
 				84A8080725BBBF70008FB878 /* AppDelegate.swift in Sources */,
 				84A8082225BBEB51008FB878 /* Icons.swift in Sources */,
 				84A8080925BBBF70008FB878 /* SceneDelegate.swift in Sources */,
+				84AE161E25BD40CA003DE7E3 /* StoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
