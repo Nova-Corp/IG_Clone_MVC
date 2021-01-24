@@ -22,15 +22,6 @@ class FeedsView: UIView {
         return btn
     }()
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.backgroundColor = .white
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
-    
     func setupNavigationBar(vc: UIViewController) {
         let imageView = UIImageView(image: #imageLiteral(resourceName: "ig-font-dark"))
         imageView.contentMode = .scaleAspectFit

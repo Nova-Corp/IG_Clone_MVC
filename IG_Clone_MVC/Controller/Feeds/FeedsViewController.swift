@@ -11,10 +11,16 @@ import UIKit
 class FeedsViewController: UITableViewController {
 
     private let feedsView = FeedsView()
-    override func loadView() {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
         feedsView.setupNavigationBar(vc: self)
-        view = feedsView
         navBarFunctionality()
+        
+        let nib = UINib.init(nibName: "FeedsTableViewCell", bundle: nil)
+        tableView.register(nib, forCellReuseIdentifier: "FeedsTableViewCell")
+        tableView.separatorStyle = .none
+        
     }
     
     private func navBarFunctionality(){
@@ -28,6 +34,22 @@ class FeedsViewController: UITableViewController {
     
     @objc private func newPost() {
         print("New Post Button Tapped.")
+    }
+}
+
+extension FeedsViewController {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        2
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        if indexPath.row == 1 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "FeedsTableViewCell") as! FeedsTableViewCell
+            return cell
+//        }else{
+//
+//        }
+        
     }
 }
 

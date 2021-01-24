@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		69C15205907A905A844A0B94 /* Pods_IG_Clone_MVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 026A8F7E2DCAF83098C24626 /* Pods_IG_Clone_MVC.framework */; };
+		84170E3D25BC2AFF0069BB01 /* FeedsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84170E3B25BC2AFF0069BB01 /* FeedsTableViewCell.swift */; };
+		84170E4125BC61D80069BB01 /* FeedsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84170E4025BC61D80069BB01 /* FeedsTableViewCell.xib */; };
 		84A8080725BBBF70008FB878 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8080625BBBF70008FB878 /* AppDelegate.swift */; };
 		84A8080925BBBF70008FB878 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8080825BBBF70008FB878 /* SceneDelegate.swift */; };
 		84A8080B25BBBF70008FB878 /* FeedsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84A8080A25BBBF70008FB878 /* FeedsViewController.swift */; };
@@ -21,6 +23,8 @@
 		026A8F7E2DCAF83098C24626 /* Pods_IG_Clone_MVC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IG_Clone_MVC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C6C32377747BB4FF446E6A8 /* Pods-IG_Clone_MVC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IG_Clone_MVC.debug.xcconfig"; path = "Target Support Files/Pods-IG_Clone_MVC/Pods-IG_Clone_MVC.debug.xcconfig"; sourceTree = "<group>"; };
 		19F32392828BC749B7619242 /* Pods-IG_Clone_MVC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IG_Clone_MVC.release.xcconfig"; path = "Target Support Files/Pods-IG_Clone_MVC/Pods-IG_Clone_MVC.release.xcconfig"; sourceTree = "<group>"; };
+		84170E3B25BC2AFF0069BB01 /* FeedsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedsTableViewCell.swift; sourceTree = "<group>"; };
+		84170E4025BC61D80069BB01 /* FeedsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedsTableViewCell.xib; sourceTree = "<group>"; };
 		84A8080325BBBF70008FB878 /* IG_Clone_MVC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IG_Clone_MVC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84A8080625BBBF70008FB878 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84A8080825BBBF70008FB878 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,32 @@
 				19F32392828BC749B7619242 /* Pods-IG_Clone_MVC.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		84170E3825BC26A00069BB01 /* Feeds */ = {
+			isa = PBXGroup;
+			children = (
+				84A8080A25BBBF70008FB878 /* FeedsViewController.swift */,
+			);
+			path = Feeds;
+			sourceTree = "<group>";
+		};
+		84170E3A25BC26D20069BB01 /* Feeds */ = {
+			isa = PBXGroup;
+			children = (
+				84A8081D25BBC53C008FB878 /* FeedsView.swift */,
+				84170E3F25BC607C0069BB01 /* FeedsTableViewCell */,
+			);
+			path = Feeds;
+			sourceTree = "<group>";
+		};
+		84170E3F25BC607C0069BB01 /* FeedsTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				84170E3B25BC2AFF0069BB01 /* FeedsTableViewCell.swift */,
+				84170E4025BC61D80069BB01 /* FeedsTableViewCell.xib */,
+			);
+			path = FeedsTableViewCell;
 			sourceTree = "<group>";
 		};
 		84A807FA25BBBF70008FB878 = {
@@ -104,7 +134,7 @@
 		84A8081B25BBC40B008FB878 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				84A8081D25BBC53C008FB878 /* FeedsView.swift */,
+				84170E3A25BC26D20069BB01 /* Feeds */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -112,7 +142,7 @@
 		84A8081C25BBC419008FB878 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				84A8080A25BBBF70008FB878 /* FeedsViewController.swift */,
+				84170E3825BC26A00069BB01 /* Feeds */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -196,6 +226,7 @@
 			files = (
 				84A8081325BBBF72008FB878 /* LaunchScreen.storyboard in Resources */,
 				84A8081025BBBF72008FB878 /* Assets.xcassets in Resources */,
+				84170E4125BC61D80069BB01 /* FeedsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84A8081E25BBC53C008FB878 /* FeedsView.swift in Sources */,
+				84170E3D25BC2AFF0069BB01 /* FeedsTableViewCell.swift in Sources */,
 				84A8080B25BBBF70008FB878 /* FeedsViewController.swift in Sources */,
 				84A8080725BBBF70008FB878 /* AppDelegate.swift in Sources */,
 				84A8082225BBEB51008FB878 /* Icons.swift in Sources */,
